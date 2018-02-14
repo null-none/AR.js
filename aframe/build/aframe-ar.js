@@ -8184,6 +8184,8 @@ AFRAME.registerComponent('arjs-anchor', {
 			// arProfile.changeMatrixMode('modelViewMatrix')
 			arProfile.changeMatrixMode(_this.data.changeMatrixMode)
 
+			console.log(_this.data.preset)
+			console.log(_this.data.url);
 			// honor this.data.preset
 			if( _this.data.preset === 'hiro' ){
 				arProfile.defaultMarkerParameters.type = 'pattern'
